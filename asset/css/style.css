@@ -178,3 +178,107 @@ body {
 .btn_primary_bar--yellows {
     background-image: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
 }
+
+
+/* Part 2 */
+
+.overview {
+    margin: 55px auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.overview-text {
+    height: 416px;
+    width: 350px;
+    padding-block: 20px;
+    padding-inline: 15px 35px;
+
+}
+
+h3 {
+    color: #9a9a9a;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+h2 {
+    margin-top: 15px;
+    width: 350px;
+    font-size: 36px;
+    line-height: 36px;
+    color: #555555;
+}
+
+u {
+    z-index: 99;
+    position: relative;
+    text-decoration: none;
+}
+
+u::after{
+    position: absolute;
+    content: "";
+    background-color: #14b9d5;
+    left: 0;
+    bottom: 5px;
+    height: 5px;
+    width: 100%;
+    z-index: -9;
+}
+
+p{
+    margin-top: 20px;
+    color: #9a9a9a;
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+h1{
+    margin-top: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    color: #555555;
+    font-weight: normal;
+}
+
+.price__old {
+    color: #dadada;
+    text-decoration: line-through;
+}
+
+.price__quantity {
+    font-size: 14px;
+}
+
+.btn-book {
+    margin-top: 30px;
+}
+
+.btn-book a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 15px 35px;
+    background-color: #1bbc9b ;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+/* slide */
+
+.overview-image {
+    padding-block: 20px;
+    padding-inline: 25px 15px;
+}
+
+.slide > img {
+    width: 750px;
+    height: 410px;
+}
