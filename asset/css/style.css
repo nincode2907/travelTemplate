@@ -30,6 +30,7 @@ body {
     padding: 32px 60px;
     display:flex;
     align-items: center;
+    position: relative;
 }
 
 .nav_logo {
@@ -77,4 +78,103 @@ body {
 .nav_list_item_book {
     background-color: #BA71DA;
     margin-left: 20px;
+}
+
+.header_bar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 352px;
+    background-color: #fff;
+    padding: 24px 36px;
+    z-index: 1;
+}
+
+.bar_close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.bar_close_icon {
+    font-size: 1.6rem;
+}
+
+.bar_close_icon:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.bar_unit {
+    text-align:center;
+}
+
+.bar_unit_subheader {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #9a9a9a;
+    letter-spacing: 2px;
+    line-height: 1.8rem;
+}
+
+.bar_unit_header {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 46px;
+}
+
+.bar_unit_list {
+    list-style: none;
+}
+
+.bar_unit_list_item {
+    display:flex;
+    justify-content: start;
+}
+
+.bar_unit_list_item_image {
+    width: 100px;
+}
+
+.bar_unit_list_item_content {
+    margin-left: 32px;
+    text-align: left;
+}
+
+.bar_unit_list_item_content_place {
+    font-size: 1.4rem;
+    color: rgb(34, 32, 32);
+    font-weight: normal;
+    line-height: 2.3rem;
+}
+
+.bar_unit_list_item_content_nationality {
+    font-size: 1rem;
+    color: #9a9a9a;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+}
+
+.bar_unit_list_item_content_nationality_icon {
+    font-size: 1rem;
+    color: #9a9a9a;
+}
+
+.bar_unit_list_item_content_book {
+}
+
+.bar_unit_list_item_content_price {
+
+}
+
+.btn_primary_bar {
+    padding: 8px 20px 5px !important;
+    font-size: 1.4rem;
+}
+
+.btn_primary_bar--yellows {
+    background-image: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
 }
