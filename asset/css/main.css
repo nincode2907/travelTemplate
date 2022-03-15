@@ -99,3 +99,27 @@
     display: inline-block;
     cursor: pointer;
 }
+
+.ground--yellows {
+    background-image: linear-gradient(to right, #ffd205, #ff9b05);
+}
+
+.ground--pink {
+    background-image: linear-gradient(to right, #f76570, #f78d65);
+}
+
+.ground--purpose {
+    background-image: linear-gradient(to right, #ba71da, #da717b);
+}
+
+.ground--green {
+    background: linear-gradient(to right, #1bbc9b, #1bbc63);
+}
+
+.ground--orange {
+    background: linear-gradient(to right, #f3a46b, #f3c96b );
+}
+
+.ground--blue {
+    background: linear-gradient(to right, #14b9d5, #14d5b1 );
+}

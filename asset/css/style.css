@@ -20,6 +20,7 @@ body {
     background-image: url(../img/header.jpg);
     background-size: 130%;
     background-position: center;
+    overflow: hidden;
     opacity: 0.9;
 }
 
@@ -29,6 +30,7 @@ body {
     background-color: rgba(0, 0, 0, 0.18);
     padding: 32px 60px;
     display:flex;
+    /* overflow: hidden; */
     align-items: center;
     position: relative;
 }
@@ -88,7 +90,15 @@ body {
     width: 352px;
     background-color: #fff;
     padding: 24px 36px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transform: translateX(360px);
+    transition: all 1s ease;
     z-index: 1;
+}
+
+.header_bar_fade {
+    transform: translateX(0);
 }
 
 .bar_close {
@@ -120,10 +130,23 @@ body {
 
 .bar_unit_header {
     text-transform: uppercase;
+    display: inline-block;
     font-weight: 700;
     font-size: 1.6rem;
     line-height: 2rem;
     margin-bottom: 46px;
+    position: relative;
+}
+
+.bar_unit_header::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 10px;
+    z-index: -1;
+    left: 0;
+    background-image: linear-gradient(to right, #ffd205, #ff9b05);
 }
 
 .bar_unit_list {
@@ -133,10 +156,12 @@ body {
 .bar_unit_list_item {
     display:flex;
     justify-content: start;
+    margin-bottom: 28px;
 }
 
 .bar_unit_list_item_image {
     width: 100px;
+    height: 100px;
 }
 
 .bar_unit_list_item_content {
@@ -145,36 +170,119 @@ body {
 }
 
 .bar_unit_list_item_content_place {
-    font-size: 1.4rem;
-    color: rgb(34, 32, 32);
+    font-size: 1.3rem;
+    color: #555;
     font-weight: normal;
-    line-height: 2.3rem;
+    letter-spacing: 1px;
+    line-height: 1.3rem;
+    margin-bottom: 8px;
 }
 
 .bar_unit_list_item_content_nationality {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #9a9a9a;
     letter-spacing: 2px;
     margin-bottom: 24px;
 }
 
 .bar_unit_list_item_content_nationality_icon {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #9a9a9a;
 }
 
-.bar_unit_list_item_content_book {
-}
-
-.bar_unit_list_item_content_price {
-
-}
-
 .btn_primary_bar {
-    padding: 8px 20px 5px !important;
-    font-size: 1.4rem;
+    padding: 8px 18px 5px !important;
+    font-size: 0.8rem !important;
 }
 
-.btn_primary_bar--yellows {
-    background-image: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+.tour {
+    background-image: url(../img/tour/europe.jpg);
+    background-size: 100%;
+    position: relative;
+}
+
+.tour:hover .tour_sub {
+    opacity: 1;
+}
+
+.tour--small {
+    height: 262px;
+    width: 100%;
+    margin: 52px 0 38px;
+}
+
+.tour--big {
+    height: 374px;
+    height: 374px;
+}
+
+.tour_icon {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+}
+
+.tour_info {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+
+.tour_info_nationality {
+    color: #fff;
+    font-size: 1.3rem;
+    text-shadow: 0 0 3px #000;
+    font-weight: 800;
+}
+
+.tour_info_package {
+    color: #fff;
+    font-size: 1.2rem;
+    text-shadow: 0 0 1px #000;
+}
+
+.tour_sub {
+    background-color: #14B9D5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.tour_sub_packages {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+.tour_sub_list {
+    list-style: none;
+    text-align: center;
+}
+
+.tour_sub_list_item {
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.tour_sub_btn {
+    background-color: #fff;
+    color: #14B9D5!important;
+    font-size: 0.8rem !important;
+    padding: 8px 15px !important;
+    margin-top: 12px;
 }
