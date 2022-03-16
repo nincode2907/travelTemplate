@@ -182,16 +182,13 @@ body {
 
 /* Part 2 */
 
-.overview {
+.overview.row {
     margin: 55px auto;
     max-width: 1200px;
-    display: flex;
-    justify-content: space-around;
 }
 
 
 .overview-text {
-    height: 416px;
     width: 350px;
     padding-block: 20px;
     padding-inline: 15px 35px;
@@ -309,7 +306,7 @@ u::after{
 .hour::before, .minute::before, .second::before {
     content: "/";
     position: absolute;
-    top: -2px;
+    top: -12px;
     left: -42px;
     font-size: 60px;
     font-weight: 100;
@@ -326,4 +323,117 @@ u::after{
 .time-text {
     text-align: center;
     font-size: 13px;
+}
+
+/* service */
+
+.service.row {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+
+.service__text  {
+    padding-left: 70px;
+    position: relative;
+    text-align: left;
+}
+
+.service__text img {
+    position: absolute;
+    color: #a3a3a3;
+    top: 0;
+    left: 0;
+    width: 50px;
+}
+
+.view-more {
+    color: #14b9d5;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.discover.row {
+    margin-top: 65px;
+    margin-bottom: 65px;
+    height: 269px;
+
+}
+
+.discover-cities {
+    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-5-filter.jpg?id=1584);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat ;
+    background-size: cover ;
+    position: relative;
+}
+
+.discover-nature {
+    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-6-filter.jpg?id=1585);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat ;
+    background-size: cover ;
+    position: relative;
+}
+
+.discover__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    padding: 60px 15px;
+}
+
+.discover-txt1 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.discover-txt1::before{
+    content: "";
+    display: block;
+    height: 20px;
+}
+
+.discover-txt2 {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.discover__text a {
+    text-align: center;
+    padding: 15px 35px;
+    border-radius: 38px;
+    background-color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.details::before {
+    content: "";
+    display: block;
+    height: 40px;
+}
+
+.details {
+    text-align: center;
+}
+
+.details-c {
+    color: #f3a46b;;
+}
+
+.details-n {
+    color: #1bbc9b;
 }
