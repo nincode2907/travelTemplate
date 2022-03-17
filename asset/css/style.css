@@ -126,6 +126,7 @@ body {
     color: #9a9a9a;
     letter-spacing: 2px;
     line-height: 1.8rem;
+    display: block;
 }
 
 .bar_unit_header {
@@ -196,9 +197,12 @@ body {
 }
 
 .tour {
-    background-image: url(../img/tour/europe.jpg);
-    background-size: 100%;
     position: relative;
+}
+
+.tour_img {
+    width: 100%;
+    z-index: -1;
 }
 
 .tour:hover .tour_sub {
@@ -207,13 +211,15 @@ body {
 
 .tour--small {
     height: 262px;
-    width: 100%;
+    width: 262px;
     margin: 52px 0 38px;
 }
 
 .tour--big {
+    margin: 15px;
+    width: 374px;
     height: 374px;
-    height: 374px;
+    display: block;
 }
 
 .tour_icon {
@@ -227,6 +233,7 @@ body {
 
 .tour_info {
     position: absolute;
+    text-align: left;
     bottom: 25px;
     left: 25px;
 }
@@ -266,31 +273,229 @@ body {
     margin-bottom: 28px;
 }
 
-<<<<<<< HEAD
 .tour_sub_list {
     list-style: none;
     text-align: center;
 }
 
 .tour_sub_list_item {
-    color: #fff;
-    font-size: 1rem;
-    letter-spacing: 1px;
     margin-bottom: 10px;
     cursor: pointer;
 }
 
+.tour_sub_list_item_link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
 .tour_sub_btn {
     background-color: #fff;
-    color: #14B9D5!important;
     font-size: 0.8rem !important;
     padding: 8px 15px !important;
     margin-top: 12px;
 }
-=======
+
+.tour_sub_btn_link {
+    text-decoration: none;
+    color: #14B9D5;
+}
+
 .btn_primary_bar--yellows {
     background-image: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
 }
+
+.header_body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.header_body_heading {
+    margin:170px 0 30px;
+}
+
+.header_body_subheading {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    margin-bottom: 66px;
+}
+
+.header_body_search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 25px;
+    height: 40px;
+    min-width: 375px;
+    padding: 0 28px;
+    cursor: pointer;
+    position: relative;
+}
+
+.header_body_search_description {
+    color: #9a9a9a;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.header_body_search_icon {
+    color: #9a9a9a;
+    font-size: 1.2rem;
+}
+
+.header_body_search_options {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    border-radius: 8px;
+    width: 100%;
+    list-style: none;
+}
+
+.header_body_search_option {
+    width: 100%;
+    height: 24px;
+    color: #9a9a9a;
+    background-color: #fff;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    padding: 0 28px;
+    line-height: 24px;
+}
+
+.header_body_search_option:hover {
+    cursor: default;
+    background-color: #14B9D5;
+    color: #fff;
+}
+
+.header_body_search_option:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.header_body_search_option:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.header_body_search_option_detail {
+    padding-left: 38px;
+}
+
+
+.header_body_options {
+    display: flex;
+    justify-content: center;
+    margin-top: 68px;
+}
+
+.header_body_option {
+    margin: 0 15px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.header_body_option_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    width: 112px;
+    height: 105px;
+
+}
+
+.header_body_option_link_img {
+    width: 42px;
+    margin-bottom: 15px;
+}
+
+.body_destination {
+    padding: 60px 152px;
+    text-align: center;
+}
+
+.body_destination_subheading {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #9a9a9a;
+    letter-spacing: 2px;
+}
+
+.body_destination_heading {
+    color: #555555;
+    text-transform: uppercase;
+    font-size: 2rem ;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 30px;
+}
+
+.body_destination_heading_main {
+
+}
+
+.body_destination_tours {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.body_holiday {
+    width:100%;
+    height: 235px;
+    background-image: url(../img/holiday.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 160px;
+}
+
+.body_holiday_left {
+    color: #fff;
+}
+
+.body_holiday_left_subheading {
+    font-size: 3rem;
+    font-weight: 800;   
+    line-height: 3rem;  
+}
+
+.body_holiday_left_heading {
+    font-size: 3rem;
+    font-weight: 800; 
+    line-height: 3rem;  
+}
+
+.body_holiday_left_heading_main {
+    text-decoration: underline;
+    text-decoration-color: #F76570;
+}
+
+.body_holiday_right {
+    background-color: #fff;
+    color: #F76570 !important;
+    padding: 15px 35px !important;
+    border-radius: 35px !important;
+    font-size: 0.8rem !important;
+    position: relative;
+    margin-right: 70px;
+}
+
 
 
 /* Part 2 */
@@ -306,12 +511,11 @@ body {
 .overview-text {
     height: 416px;
     width: 350px;
-    padding-block: 20px;
-    padding-inline: 15px 35px;
-
+    padding: 20px;
+    padding: 15px 35px;
 }
 
-h3 {
+/* h3 {
     color: #9a9a9a;
     font-size: 14px;
     line-height: 14px;
@@ -325,7 +529,7 @@ h2 {
     font-size: 36px;
     line-height: 36px;
     color: #555555;
-}
+} */
 
 u {
     z-index: 99;
@@ -344,7 +548,7 @@ u::after{
     z-index: -9;
 }
 
-p{
+/* p{
     margin-top: 20px;
     color: #9a9a9a;
     font-size: 14px;
@@ -359,7 +563,7 @@ h1{
     line-height: 30px;
     color: #555555;
     font-weight: normal;
-}
+} */
 
 .price__old {
     color: #dadada;
@@ -395,4 +599,3 @@ h1{
     width: 750px;
     height: 410px;
 }
->>>>>>> ea8657393cdbb9a79df848bbdf8c9b373982e77e

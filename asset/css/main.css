@@ -1,3 +1,7 @@
+.hidden {
+    display: none;
+}
+
 .nav_sublist {
     position: absolute;
     top: 100%;
@@ -122,4 +126,38 @@
 
 .ground--blue {
     background: linear-gradient(to right, #14b9d5, #14d5b1 );
+}
+
+.heading_main {
+    color: #fff;
+    font-size: 3.4rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.heading_main_textlast {
+    text-decoration: underline;
+    text-decoration-color: #BA71DA;
+}
+
+.heading_main_taller {
+    color: #fff;
+    font-size: 3.4rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.heading_main_taller_textlast {
+    position: relative;
+}
+
+.heading_main_taller_textlast::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width:100%;
+    height:6px;
+    z-index: -1;
+    background: linear-gradient(to right, #1bbc9b, #1bbc63);
 }
