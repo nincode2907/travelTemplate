@@ -509,15 +509,14 @@ body {
 }
 
 
-/* h3 {
-=======
+
 .ovText1 {
->>>>>>> 223f21b24bb212cd4fcaf23e787745e9aa9a5771
     color: #9a9a9a;
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 2px;
     font-weight: normal;
+    text-transform: uppercase;
 }
 
 .ovText2{
@@ -526,7 +525,7 @@ body {
     font-size: 36px;
     line-height: 36px;
     color: #555555;
-} */
+} 
 
 u {
     z-index: 99;
@@ -534,7 +533,7 @@ u {
     text-decoration: none;
 }
 
-u::after{
+u.under-blue::after{
     position: absolute;
     content: "";
     background-color: #14b9d5;
@@ -546,10 +545,7 @@ u::after{
 }
 
 
-/* p{
-=======
 .ovPara{
->>>>>>> 223f21b24bb212cd4fcaf23e787745e9aa9a5771
     margin-top: 20px;
     color: #9a9a9a;
     font-size: 14px;
@@ -564,7 +560,7 @@ u::after{
     line-height: 30px;
     color: #555555;
     font-weight: normal;
-} */
+} 
 
 .price__old {
     color: #dadada;
@@ -757,4 +753,116 @@ u::after{
 
 .details-n {
     color: #1bbc9b;
+}
+
+/* packages */
+
+.packages {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.package__text, .package__text>h2 {
+    width: 100%;
+    text-align: center;
+}
+
+u.under-green::after{
+    position: absolute;
+    content: "";
+    background-color: #1bbc9b;
+    left: 0;
+    bottom: 5px;
+    height: 5px;
+    width: 100%;
+    z-index: -9;
+}
+
+.package__tag.row {
+    margin-block: 55px;
+}
+
+.tag__items>img{
+    width: 100%;
+    height: 239px;
+}
+
+.country, .location, .type-travel, .detail-btn, .price__new {
+    margin-block: 20px;
+
+} 
+
+.contain-tag {
+    padding: 30px;
+
+}
+.country {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555555;
+}
+
+.location {
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: #9a9a9a;
+    font-size: 15px;
+}
+
+.icon-locate {
+    margin-right: 5px;
+}
+
+.type-travel {
+    display: inline-block;
+}
+
+.type-list {
+    text-transform: uppercase;
+    color: #555555;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.price__new {
+    color: #555555;
+    font-size: 25px;
+    font-weight: normal;
+    float: right;
+}
+
+.price-prev {
+    text-decoration: line-through;
+    color: #a3a3a3;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.details-tag {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 30px;
+    letter-spacing: 1px;
+}
+
+.detail-btn > a{
+    padding: 5px 20px;
+    line-height: 27px;
+    font-size: 14px;
+
+}
+
+.bg-p {
+    background-color: #F76570;
+
+}
+
+.bg-pp {
+    background-color:#BA71DA;
+}
+
+.bg-y {
+    background-color: #ffd205;
 }
