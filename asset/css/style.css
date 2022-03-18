@@ -525,6 +525,7 @@ body {
     font-size: 36px;
     line-height: 36px;
     color: #555555;
+    font-weight: bold;
 } 
 
 u {
@@ -596,11 +597,14 @@ u.under-blue::after{
     position: relative;
 }
 
-.slide > img {
+.slide-img > img {
     width: 750px;
     height: 410px;
 }
 
+.slide-img {
+    
+}
 /* timer */
 
 .time {
@@ -783,9 +787,40 @@ u.under-green::after{
     margin-block: 55px;
 }
 
-.tag__items>img{
+.tag-img{
     width: 100%;
     height: 239px;
+    position: relative;
+}
+
+.symbol {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -20px;
+    right: 20px;
+}
+
+.icon-img__tag {
+
+    width: 26px;
+    height: 26px;
+}
+
+.bg-mix-y {
+    background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+}
+
+.bg-mix-p {
+    background: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+}
+
+.bg-mix-pp {
+    background: linear-gradient(to right, #ba71da 0%, #da717b 100%);
 }
 
 .country, .location, .type-travel, .detail-btn, .price__new {
@@ -797,6 +832,7 @@ u.under-green::after{
     padding: 30px;
 
 }
+
 .country {
     font-size: 20px;
     font-weight: bold;
@@ -816,6 +852,18 @@ u.under-green::after{
 
 .type-travel {
     display: inline-block;
+}
+
+.count {
+    content: "+1";
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    padding: 2px 8px;
+    border-radius: 30px;
+    display: inline;
+    color: #fff;
+
 }
 
 .type-list {
@@ -840,19 +888,21 @@ u.under-green::after{
     font-weight: normal;
 }
 
-.details-tag {
+a.details-tag {
+    font-size: 14px;
+    display: inline-block;
     text-decoration: none;
     color: #fff;
-    border-radius: 30px;
-    letter-spacing: 1px;
-}
-
-.detail-btn > a{
     padding: 5px 20px;
     line-height: 27px;
-    font-size: 14px;
-
+    border-radius: 30px;
 }
+
+a.details-tag:hover {
+    color: #fff;
+}
+
+
 
 .bg-p {
     background-color: #F76570;
@@ -865,4 +915,131 @@ u.under-green::after{
 
 .bg-y {
     background-color: #ffd205;
+}
+
+/* footer */
+.footer {
+    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-7.jpg?id=1602) ;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 631px;
+}
+
+.contact-block.row {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-text::before {
+    content: "";
+    height: 80px;
+    display: block;
+}
+
+.contact-text::after {
+    content: "";
+    height: 40px;
+    display: block;
+}
+
+.send-block::before {
+    content: "";
+    display: block;
+    height: 100px;
+}
+
+input[type="text"]{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    width: 256px;
+
+}
+
+.send-btn {
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 20px;
+    background-color: #14B9D5;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+
+.about-block.row {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 35px 30px;
+}
+
+.logo-color {
+    width: 150px;
+}
+
+.social-media {
+    color: #777575;
+    font-size: 22px;
+}
+.social-media:hover {
+    color: #777575;
+}
+
+.social-media > i {
+    margin-right: 20px;
+    
+}
+
+.social-media::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 25px;
+}
+
+.list-about {
+    list-style: none;
+    font-size: 14px;
+    line-height: 27px;
+    color: #9a9a9a;
+    letter-spacing: 1px;
+}
+
+.list-about:nth-child(1){
+    margin-top: 35px;
+}
+
+.list-about::before {
+    content: ">";
+    font-size: 14px;
+    line-height: 27px;
+    color: #9a9a9a;
+    opacity: 0.5;
+    margin-right: 5px;
+}
+
+.end.row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.end-text, .copyright  {
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 20px;
+    background-color: #14B9D5;
+    font-weight: normal;
+}
+
+.end-text {
+    float: left;
+}
+
+.copyright {
+    float: right;
+    text-align: right;
 }
