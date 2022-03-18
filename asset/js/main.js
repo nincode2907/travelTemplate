@@ -8,6 +8,8 @@ const searchValue = document.querySelector(".header_body_search_description")
 const quantiPackages = document.querySelectorAll(".tour_info_package_quantity")
 const textPackages = document.querySelectorAll(".tour_info_package_text")
 
+// const nav = document.querySelector(".header_nav")
+
 //open sidebar 
 menu.addEventListener("click", () => {
     bar.classList.add("header_bar_fade")
@@ -15,7 +17,6 @@ menu.addEventListener("click", () => {
 
 barExit.addEventListener("click", () => {
     bar.classList.remove("header_bar_fade")
-
 })
 
 //options search

@@ -12,6 +12,12 @@ body {
 #main {
     max-width: 1920px;
     margin: 0 auto;
+    overflow-x: hidden;
+}
+
+ul {
+    padding-left: 0!important;
+    margin-bottom: 0!important;
 }
 
 .header {
@@ -30,9 +36,9 @@ body {
     background-color: rgba(0, 0, 0, 0.18);
     padding: 32px 60px;
     display:flex;
-    /* overflow: hidden; */
     align-items: center;
     position: relative;
+    animation: navFade 2s ease-out 0s 1 normal forwards;
 }
 
 .nav_logo {
@@ -317,7 +323,37 @@ body {
 
 .header_body_heading {
     margin:170px 0 30px;
+    animation: headingFade 2s ease-out 0s 1 normal forwards;
 }
+
+@keyframes headingFade {
+    0% {
+      opacity: 0;
+      transform: translateX(-650px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.header_body_heading_main {
+    display: inline-block;
+    animation: headingMainFade 3s ease-out 0s 1 normal forwards;
+}
+
+@keyframes headingMainFade {
+    0% {
+      opacity: 0;
+      transform: translateX(850px) rotate(200deg);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0) rotate(0deg);
+    }
+  }
 
 .header_body_subheading {
     color: #fff;
@@ -325,7 +361,20 @@ body {
     font-size: 1.3rem;
     letter-spacing: 3px;
     margin-bottom: 66px;
+    animation: headerSubHeading 3s ease-out 0s 1 normal forwards;
 }
+
+@keyframes headerSubHeading {
+    0% {
+      opacity: 0;
+      transform: translateY(-550px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 .header_body_search {
     display: flex;
@@ -338,7 +387,20 @@ body {
     padding: 0 28px;
     cursor: pointer;
     position: relative;
+    animation: searchFade 3s ease-out 0s 1 normal forwards;
 }
+
+@keyframes searchFade {
+    0% {
+      opacity: 0;
+      transform: translateY(250px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 .header_body_search_description {
     color: #9a9a9a;
@@ -349,7 +411,69 @@ body {
 .header_body_search_icon {
     color: #9a9a9a;
     font-size: 1.2rem;
+    display: inline-block;
+    animation: searchIconBefore 8.5s ease 1 normal forwards,
+    searchIconAfter 1s ease-out 8.5s 1 normal forwards;
 }
+
+@keyframes searchIconBefore {
+    0% {
+      transform: translateY(-65000px) translateX(-20000px);
+    }
+  
+    90% {
+      transform: translateY(0) translateX(0);
+    }
+    100% {
+        transform: translateY(-20px);
+      }
+  }
+
+@keyframes searchIconAfter {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateY(-20px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateY(-18px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateY(-10px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateY(-5px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateY(-3px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
 
 .header_body_search_options {
     position: absolute;
@@ -401,7 +525,31 @@ body {
 .header_body_option {
     margin: 0 15px;
     background-color: rgba(0, 0, 0, 0.25);
+    animation: optionFade 4s ease 1 normal forwards;
 }
+
+.header_body_option:nth-child(2) {
+    animation-duration: 4.5s;
+}
+
+.header_body_option:nth-child(3) {
+    animation-duration: 5s;
+}
+.header_body_option:nth-child(4) {
+    animation-duration: 5.5s;
+}
+
+@keyframes optionFade {
+    0% {
+      opacity: 0;
+      transform: translateY(20000px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 .header_body_option_link {
     display: flex;
@@ -492,6 +640,19 @@ body {
     margin-right: 70px;
 }
 
+/* Introduce animation */
+
+@keyframes navFade {
+    0% {
+      transform: scaleY(0.4);
+      transform-origin: 100% 0%;
+    }
+  
+    100% {
+      transform: scaleY(1);
+      transform-origin: 100% 0%;
+    }
+  }
 
 
 /* Part 2 */
