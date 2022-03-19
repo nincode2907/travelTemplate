@@ -482,6 +482,7 @@ ul {
     border-radius: 8px;
     width: 100%;
     list-style: none;
+    z-index: 99;
 }
 
 .header_body_search_option {
@@ -493,6 +494,7 @@ ul {
     font-size: 0.9rem;
     padding: 0 28px;
     line-height: 24px;
+    z-index: 99;
 }
 
 .header_body_search_option:hover {
@@ -515,17 +517,19 @@ ul {
     padding-left: 38px;
 }
 
-
 .header_body_options {
     display: flex;
     justify-content: center;
     margin-top: 68px;
+    z-index: -1;
+
 }
 
 .header_body_option {
     margin: 0 15px;
     background-color: rgba(0, 0, 0, 0.25);
-    animation: optionFade 4s ease 1 normal forwards;
+    animation: optionFade 4s ease;
+    /* z-index: 0; */
 }
 
 .header_body_option:nth-child(2) {
