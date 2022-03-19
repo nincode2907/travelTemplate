@@ -29,10 +29,10 @@ function showSlide() {
 const intro = document.querySelector('.intro')
 const main = document.querySelector('#main')
 window.addEventListener("load", function(){
+    
 
     function introShow() {
         intro.style.display = "block"
-        main.style.display = "none"
         setTimeout(function () {
             intro.style.display = "none"
             main.style.display = "block"
