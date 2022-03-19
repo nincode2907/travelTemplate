@@ -13,14 +13,33 @@ var slides = document.getElementsByClassName('slide-img')
 var slideIndex = 0
 showSlide()
 function showSlide() {
-    for (var i = 0; i< slides.length; i++){
+    for (var i = 0; i < slides.length; i++) {
         slides[i].style.display = "none"
     }
-    if(slideIndex >= slides.length){
-        slideIndex = 0 
+    if (slideIndex >= slides.length) {
+        slideIndex = 0
     }
     slideIndex++
-    slides[slideIndex-1].style.display = "block"
+    slides[slideIndex - 1].style.display = "block"
     setTimeout(showSlide, 10000)
 
 }
+
+// Intro
+const intro = document.querySelector('.intro')
+const main = document.querySelector('#main')
+window.addEventListener("load", function(){
+
+    function introShow() {
+        intro.style.display = "block"
+        main.style.display = "none"
+        setTimeout(function () {
+            intro.style.display = "none"
+            main.style.display = "block"
+        }, 2000)
+    }
+    
+    var introShow = setTimeout(introShow, 0)
+})
+
+

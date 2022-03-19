@@ -13,6 +13,52 @@ body {
     max-width: 1920px;
     margin: 0 auto;
     overflow-x: hidden;
+    
+}
+
+.intro {
+    position: relative;
+}
+
+
+.intro::before{
+    content: "Welcome to travel websites";
+    position: absolute;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9a9a9a;
+    font-size: 60px;
+    text-transform: uppercase;
+    animation: introA 3s linear ;
+    z-index: 99999;
+}
+
+@keyframes introA {
+    0% {
+        opacity: .2;
+    }
+    20% {
+        opacity: .4;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: .4;
+    }
+    80%{
+        opacity: .2;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 ul {
@@ -769,7 +815,7 @@ u.under-blue::after{
 
 .fade {
     animation-name: fade;
-    animation-duration: 10.7s;
+    animation-duration: 10.5s;
 }
 
 @keyframes fade {
