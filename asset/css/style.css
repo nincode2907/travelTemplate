@@ -23,6 +23,7 @@ body {
 .intro::before {
   content: "Welcome to travel websites";
   position: absolute;
+  text-align: center;
   background-color: #fff;
   width: 100vw;
   height: 100vh;
@@ -381,6 +382,7 @@ ul {
 
 .header_body_subheading {
   color: #fff;
+  text-align: center;
   text-transform: uppercase;
   font-size: 1.3rem;
   letter-spacing: 3px;
