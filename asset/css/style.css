@@ -601,7 +601,7 @@ ul {
 }
 
 .body_destination {
-  padding: 60px 152px;
+  padding: 60px 0;
   text-align: center;
 }
 
@@ -621,8 +621,24 @@ ul {
   margin-bottom: 30px;
 }
 
+.body_destination_heading_main {
+  position: relative;
+}
+
+.body_destination_heading_main::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  z-index: -1;
+  bottom: 6px;
+  left: 0;
+  background-color: #1bbc9b;
+}
+
 .body_destination_tours {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -646,6 +662,7 @@ ul {
   font-size: 3rem;
   font-weight: 800;
   line-height: 3rem;
+  margin-bottom: 0;
 }
 
 .body_holiday_left_heading {
