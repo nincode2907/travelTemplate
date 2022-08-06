@@ -4,15 +4,19 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 #main {
   max-width: 1920px;
   margin: 0 auto;
-  overflow-x: hidden;
+  /* overflow: hidden; */
   display: none;
 }
 
@@ -49,7 +53,7 @@ ul {
   background-image: url(../img/header.jpg);
   background-size: 130%;
   background-position: center;
-  overflow: hidden;
+  overflow-x: hidden;
   opacity: 0.9;
 }
 
@@ -120,8 +124,8 @@ ul {
   width: 352px;
   background-color: #fff;
   padding: 24px 36px;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
   transform: translateX(360px);
   transition: all 1s ease;
   z-index: 1;
@@ -880,9 +884,7 @@ u.under-blue::after {
 }
 
 .discover.row {
-  margin-top: 65px;
-  margin-bottom: 65px;
-  height: 269px;
+  padding: 65px 0;
 }
 
 .discover-cities {
@@ -900,14 +902,16 @@ u.under-blue::after {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+}
+
+.discover-nature, .discover-cities {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .discover__text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  
   width: 100%;
   height: 100%;
   padding: 60px 15px;
@@ -1097,6 +1101,7 @@ a.details-tag {
   display: inline-block;
   text-decoration: none;
   color: #fff;
+  margin-top: 20px;
   padding: 5px 20px;
   line-height: 27px;
   border-radius: 30px;
@@ -1132,24 +1137,16 @@ a.details-tag:hover {
   max-width: 1200px;
   display: flex;
   justify-content: center;
+  padding-top: 100px;
 }
 
-.contact-text::before {
-  content: "";
-  height: 80px;
-  display: block;
+.contact-text {
+  padding-bottom: 40px;
 }
 
-.contact-text::after {
-  content: "";
-  height: 40px;
-  display: block;
-}
-
-.send-block::before {
-  content: "";
-  display: block;
-  height: 100px;
+.send-block {
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 input[type="text"] {
@@ -1181,22 +1178,24 @@ input[type="text"] {
 }
 
 .social-media {
+  margin: 15px 0;
+}
+
+.social-media > a {
   color: #777575;
   font-size: 22px;
 }
-.social-media:hover {
-  color: #777575;
+.social-media > a:hover {
+  opacity: 0.5;
 }
 
-.social-media > i {
+.social-media > a {
   margin-right: 20px;
 }
 
-.social-media::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 25px;
+.footer-nav__title {
+  color: #777575;
+  letter-spacing: 1px;
 }
 
 .list-about {
@@ -1207,8 +1206,12 @@ input[type="text"] {
   letter-spacing: 1px;
 }
 
-.list-about:nth-child(1) {
-  margin-top: 35px;
+.list-about:first-child {
+  margin-top: 20px;
+}
+
+.list-about:last-child {
+  margin-bottom: 20px;
 }
 
 .list-about::before {
