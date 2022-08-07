@@ -20,6 +20,7 @@
 
   .nav_list {
     position: fixed;
+    display: block;
     min-width: 313px;
     right: 0;
     top: 0;

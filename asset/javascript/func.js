@@ -22,15 +22,12 @@ function showSlide() {
     slideIndex++
     slides[slideIndex - 1].style.display = "block"
     setTimeout(showSlide, 10000)
-
 }
 
 // Intro
 const intro = document.querySelector('.intro')
 const main = document.querySelector('#main')
-window.addEventListener("load", function(){
-    
-
+window.addEventListener("load", function () {
     function introShow() {
         intro.style.display = "block"
         setTimeout(function () {
@@ -38,8 +35,6 @@ window.addEventListener("load", function(){
             main.style.display = "block"
         }, 2000)
     }
-    
+
     var introShow = setTimeout(introShow, 0)
 })
-
-
