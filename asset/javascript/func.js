@@ -3,7 +3,11 @@ setInterval(function () {
     var d = new Date()
     document.querySelector('.hour .time-number').innerHTML = d.getHours()
     document.querySelector('.minute .time-number').innerHTML = d.getMinutes()
-    document.querySelector('.second .time-number').innerHTML = d.getSeconds()
+    if(d.getSeconds() < 10){
+        document.querySelector('.second .time-number').innerHTML = "0" + d.getSeconds()
+    }else {
+        document.querySelector('.second .time-number').innerHTML = d.getSeconds()
+    }
 }, 1000)
 
 // SLIDE

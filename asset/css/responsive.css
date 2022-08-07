@@ -189,6 +189,9 @@
     min-width: 240px;
     text-align: center;
   }
+
+  
+
 }
 
 @media (max-width: 49.375em) {
@@ -236,4 +239,27 @@
   .body_holiday {
     background-size: cover;
   }
+
+  .overview-image {
+    margin-left: -23px;
+  }
+
+
+  .slide-img > img {
+    width: 100vw;
+    padding-top: 50%;
+    padding-left: 0;
+  }
+
+  .time {
+    position: relative;
+    left: 0;
+    width: 100vw;
+  }
+  
+  .end-text, .copyright {
+    float: none;
+    text-align: center;
+  }
+
 }

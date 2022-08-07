@@ -53,7 +53,7 @@ ul {
   background-image: url(../img/header.jpg);
   background-size: 130%;
   background-position: center;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   opacity: 0.9;
 }
 
@@ -831,6 +831,7 @@ u.under-blue::after {
 .minute,
 .second {
   position: relative;
+  /* display: flex; */
 }
 
 .hour::before,
@@ -838,6 +839,7 @@ u.under-blue::after {
 .second::before {
   content: "/";
   position: absolute;
+  display: block;
   top: -12px;
   left: -42px;
   font-size: 60px;
@@ -1138,15 +1140,14 @@ a.details-tag:hover {
   display: flex;
   justify-content: center;
   padding-top: 100px;
-}
-
-.contact-text {
   padding-bottom: 40px;
 }
 
 .send-block {
   padding-top: 20px;
-  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 25px;
 }
 
 input[type="text"] {
@@ -1156,14 +1157,18 @@ input[type="text"] {
   width: 256px;
 }
 
+input[type="text"]:focus{
+  outline: 1px solid #14b9d5;
+}
+
 .send-btn {
   letter-spacing: 1px;
   color: #fff;
   font-size: 15px;
   padding: 10px 20px;
+  border: none;
   background-color: #14b9d5;
   border-radius: 30px;
-  margin-left: 20px;
 }
 
 .about-block.row {
