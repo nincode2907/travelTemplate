@@ -816,7 +816,8 @@ u.under-blue::after {
 
 .time {
   position: absolute;
-  left: 19%;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: -15%;
   width: 490px;
   height: 115px;
