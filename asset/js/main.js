@@ -22,7 +22,7 @@ menu.addEventListener("click", () => {
         } else {
             setTimeout(() => {
                 search.style.zIndex = 0;
-            }, 600)
+            }, 700)
         }
     }
 })
@@ -35,7 +35,7 @@ menuTabletExit.addEventListener("click", () => {
     menuBarTablet.classList.remove("header_bar_fade")
     setTimeout(() => {
         search.style.zIndex = 0;
-    }, 600)
+    }, 700)
 })
 
 //options search

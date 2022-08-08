@@ -18,7 +18,6 @@
     display: none;
   }
 
-
   .nav_list {
     position: fixed;
     display: block;
@@ -190,15 +189,12 @@
     min-width: 240px;
     text-align: center;
   }
-
-  
-
 }
 
 @media (max-width: 49.375em) {
   .header {
-    /* background-size: 550%; */
-    overflow:hidden;
+    background-size: 550%;
+    overflow: hidden;
   }
 }
 
@@ -245,7 +241,6 @@
     margin-left: -23px;
   }
 
-
   .slide-img > img {
     width: 100vw;
     padding-top: 50%;
@@ -257,10 +252,10 @@
     left: 0;
     width: 100vw;
   }
-  
-  .end-text, .copyright {
+
+  .end-text,
+  .copyright {
     float: none;
     text-align: center;
   }
-
 }
