@@ -794,7 +794,7 @@ u.under-blue::after {
 }
 
 .slide-img > img {
-  
+  width: 100%;
 }
 
 .fade {

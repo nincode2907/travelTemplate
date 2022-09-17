@@ -16,6 +16,7 @@
 @media (max-width: 75.5em) {
   #main {
     overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   .header_bar {
